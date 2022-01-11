@@ -1,0 +1,285 @@
+body {
+  color: #54585b;
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h1,
+h2 {
+  text-align: left;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  color: #0d6efd;
+  font-size: 28px;
+  padding: 0;
+  margin-top: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 16px;
+  padding: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px;
+  margin-top: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+
+p.date {
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+img {
+  display: block;
+  max-width: 700px;
+  max-height: fit-content;
+  margin: auto;
+}
+
+input {
+  border-radius: 0, 0 12px;
+  color: #ffffff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-size: 16px;
+  margin: 0;
+  line-height: 22px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+input:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+section {
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+
+section.five-day-forecast {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+li {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  margin-left: 0;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.weather-app {
+  align-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 12px;
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  max-width: 725px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
+p.card-text {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 16px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.card-text:last-child {
+  margin-bottom: 16px;
+  height: 16px;
+}
+
+div.searchBar {
+  margin-top: 0px;
+  column-width: auto;
+  display: block;
+  display: flex;
+}
+
+div.container {
+  margin-top: 8px;
+  align-content: center;
+  display: block;
+  padding: 0;
+  max-width: 700px;
+}
+
+div.col-4 {
+  max-width: 100%;
+  margin-top: 56px;
+}
+
+div.col-2 {
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+div.weather-icon-lrg {
+  font-size: 100px;
+  display: inline-block;
+}
+
+.form-outline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span.limited-spots {
+  font-weight: bold;
+}
+
+div.button-container {
+  margin: 60px 0;
+}
+
+.feels-like {
+  line-height: 14px;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.top-row {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lrgTemp {
+  text-align: left;
+  font-size: 58px;
+  font-weight: bold;
+  margin-top: 36px;
+  color: #0d6efd;
+}
+
+.weather-icon {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.card {
+  margin-top: 8px;
+  padding: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
+div.side-card {
+  margin-top: 0px;
+  padding: 4px;
+  margin-right: 0px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
+h5.card-title {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 12px;
+}
+
+h3.temperature {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+div.container {
+  align-content: center;
+  display: block;
+  padding: 0;
+  max-width: 725px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input.form-control {
+  border-radius: 8px 0 0 8px;
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #ffffff;
+}
+
+.section-title {
+  color: #54585b;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-top: 40px;
+}
+
+i.fas.fa-search {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 40px;
+}
