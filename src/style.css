@@ -283,3 +283,9 @@ i.fas.fa-search {
   font-size: 40px;
   line-height: 40px;
 }
+
+.footer {
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 4px;
+}
