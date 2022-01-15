@@ -1,4 +1,4 @@
-//Homework W5
+//Homework W7
 function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
