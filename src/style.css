@@ -96,6 +96,7 @@ ul {
   margin-left: 0;
   margin-top: 0;
   padding: 0;
+  margin-bottom: 0;
 }
 
 li {
@@ -106,6 +107,11 @@ li {
   font-weight: normal;
   line-height: 28px;
   margin-left: 0;
+}
+
+li.description {
+  margin-top: 16px;
+  line-height: 8px;
 }
 
 footer {
