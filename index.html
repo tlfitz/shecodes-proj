@@ -40,12 +40,9 @@
                 <li id="description" class="description"></li>
               </ul>
               <div class="clearfix weather-temperature">
-              <span class="lrgTemp" id="temperature"> ° </span><span class="units">
-                <a href="#" id="fahrenheit-link" class="active">°F</a> |
-                <a href="#" id="celsius-link">°C</a>
-              </span><img src="" alt="Clear" id="icon" class="float-left" />
+              <span class="lrgTemp" id="temperature"></span><span class="lrgTempUnits">°F</span><img src="" alt="" id="icon" class="float-left" />
               </div>
-              <div class="feels-like">Feels like <strong><span id="feels-like"></span></strong>°F
+              <div class="feels-like">Feels like <strong><span id="feels-like"></span></strong><span class = "smTempUnits">°F</span>
               </header>
 
               <section class="additional-conditions">
@@ -62,9 +59,9 @@
 
           <div class="col-2">
             <div class="side-card">
-              <h5 class="card-title">Morning</h5>
-              <h3 class="temperature">50°F</h3>
-              <div class="weather-icon">☁️</div>
+              <div class="clearfix weather-temperature"></div>
+              <div class="card-title">Morning</div>
+              <span class="h3.temperature" id="temperature">°F</span><img src="" alt="" id="icon" class="float-left" />
             </div>
             
             <div class="side-card">
@@ -80,57 +77,15 @@
             </div>
           </div>
         </div>
-
+        
         <section class="five-day-forecast">
           <span class="section-title">Next 5-Day Forecast</span>
           <div class="container">
-            <div class="row">
-              <div class="col-sm-2">
-                <div class="card">
-                  <h5 class="card-title">Mon 12/13</h5>
-                  <h3 class="temperature">58°F</h3>
-                  <div class="weather-icon">☁️</div>
-                  <p class="card-text">Cloudy</p>
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="card">
-                  <h5 class="card-title">Tues 12/14</h5>
-                  <h3 class="temperature">57°F</h3>
-                  <div class="weather-icon">🌧</div>
-                  <p class="card-text">Rain</p>
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="card">
-                  <h5 class="card-title">Wed 12/15</h5>
-                  <h3 class="temperature">56°F</h3>
-                  <div class="weather-icon">⛅️</div>
-                  <p class="card-text">Partly Cloudy</p>
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="card">
-                  <h5 class="card-title">Thu 12/16</h5>
-                  <h3 class="temperature">55°F</h3>
-                  <div class="weather-icon">⛅️</div>
-                  <p class="card-text">Partly Cloudy</p>
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="card">
-                  <h5 class="card-title">Fri 12/17</h5>
-                  <h3 class="temperature">61°F</h3>
-                  <div class="weather-icon">☀️</div>
-                  <p class="card-text">Sunny</p>
-                </div>
-              </div>
-            </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
         </section>
         <footer>
-          <p class="footer">Powered by The Weather Company</p>
-          <p class="footer">Open-source code by <a href="https://github.com/tlfitz/shecodes-proj" target="-blank">tfitz</a></p>
+          <p class="footer">Powered by OpenWeather  |  Open-source code by <a href="https://github.com/tlfitz/shecodes-proj" target="-blank">tfitz</a></p>
           </div>
         </footer>
       </div>
