@@ -131,9 +131,8 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 12px;
   display: block;
-  margin: 20px;
   padding: 20px;
-  max-width: 725px;
+  max-width: 622px;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
 
@@ -159,11 +158,10 @@ div.searchBar {
 }
 
 div.container {
-  margin-top: 8px;
   align-content: center;
   display: block;
   padding: 0;
-  max-width: 700px;
+  max-width: 622px;
 }
 
 div.col-4 {
@@ -171,19 +169,41 @@ div.col-4 {
   margin-top: 56px;
 }
 
-div.col-2 {
-  margin-top: 8px;
+div.top-col-2 {
+  margin-top: 40px;
   padding: 4px;
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
+  min-width: 133px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 8px;
   box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+}
+
+div.col-2 {
+  flex: 12%;
+  padding: 4px;
+  margin: 4px;
+  position: relative;
+  display: flex;
+  min-width: 108px;
+  max-width: 108px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --bs-gutter-x: 24px;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
 div.weather-icon-lrg {
@@ -213,8 +233,9 @@ div.button-container {
   --bs-gutter-x: 0rem;
   --bs-gutter-y: 0rem;
   display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .top-row {
@@ -390,6 +411,16 @@ input.form-control {
   color: #6c757d;
   opacity: 70%;
   font-size: 12px;
+  margin-top: 4px;
+}
+
+.daily-forecast-title {
+  color: #54585b;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 32px;
   margin-top: 4px;
 }
 

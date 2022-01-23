@@ -17,6 +17,7 @@
   <body>
     <div class="container">
       <div class="weather-app">
+        
         <form class ="search-form" id="search-form">
           <input
             type="search"
@@ -26,11 +27,9 @@
             autofocus="on"
             id="city-input"
           />
-
           <input type="submit" value="search"/>
-          
         </form>
-
+        
         <div class="top-row">
           <div class="col-6">
             <header>
@@ -40,44 +39,37 @@
                 <li id="description" class="description"></li>
               </ul>
               <div class="clearfix weather-temperature">
-              <span class="lrgTemp" id="temperature"></span><span class="lrgTempUnits">°F</span><img src="" alt="" id="icon" class="float-left" />
+                <span class="lrgTemp" id="temperature"></span><span class="lrgTempUnits">°F</span><img src="" alt="" id="icon" class="float-left" />
               </div>
-              <div class="feels-like">Feels like <strong><span id="feels-like"></span></strong><span class = "smTempUnits">°F</span>
+              <div class="feels-like">Feels
+                <strong><span id="feels-like"></span></strong><span class = "smTempUnits">°F</span>
               </header>
-
+              
               <section class="additional-conditions">
-              <span class="section-title">Additional Conditions</span>
+                <span class="section-title">Additional Conditions</span>
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>km/h</li>
+                </ul>
+              </section>
+          </div>
+        
+        <div class="top-row">
+          <div class="top-col-2">
+            <header>
+              <span class="daily-forecast-title">Daily Forecast</span>
               <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>km/h</li>
+                <li><p class="date" id="date"></p></li>
+                <li id="description" class="description"></li>
               </ul>
-            </section>
-          </div>
-
-          <div class="col-4">
-          </div>
-
-          <div class="col-2">
-            <div class="side-card">
-              <div class="clearfix weather-temperature"></div>
-              <div class="card-title">Morning</div>
-              <span class="h3.temperature" id="temperature">°F</span><img src="" alt="" id="icon" class="float-left" />
-            </div>
-            
-            <div class="side-card">
-              <h5 class="card-title">Afternoon</h5>
-              <h3 class="temperature">50°F</h3>
-              <div class="weather-icon">☁️</div>
-            </div>
-           
-            <div class="side-card">
-              <h5 class="card-title">Night</h5>
-              <h3 class="temperature">50°F</h3>
-              <div class="weather-icon">☁️</div>
-            </div>
+              </header>
           </div>
         </div>
         
+        
+        </div>
+              
+        <div class="row">
         <section class="five-day-forecast">
           <span class="section-title">Next 5-Day Forecast</span>
           <div class="container">
@@ -86,6 +78,7 @@
         </section>
         <footer>
           <p class="footer">Powered by OpenWeather  |  Open-source code by <a href="https://github.com/tlfitz/shecodes-proj" target="-blank">tfitz</a></p>
+          </div>
           </div>
         </footer>
       </div>

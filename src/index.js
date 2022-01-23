@@ -52,6 +52,41 @@ function formatDay(timestamp) {
   return days[day];
 }
 
+function displayCurrentForecast(response) {
+  let currentForecast = response.data.daily;
+  console.log(response);
+  let currentForecastElement = document.querySelector("#currentForecast");
+
+  let currentForecastHTML = `<div class="col">`;
+  currentForecast.forEach(function (forecastCurrentDay, index) {
+    if (index < 0) {
+      currentForecastHTML =
+        currentForecastHTML +
+        `
+      <div class="col">
+      <div class="weather-forecast-description">${
+        forecastCurrentDay.weather[0].description
+      }</div>
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-morn"> ${Math.round(
+            forecastCurrentDay.temp.morn
+          )}° </span>
+          <span class="weather-forecast-temperature-eve"> ${Math.round(
+            forecastCurrentDay.temp.eve
+          )}° </span>
+                    <span class="weather-forecast-temperature-night"> ${Math.round(
+                      forecastCurrentDay.temp.night
+                    )}° </span>
+        </div>
+      </div>
+  `;
+    }
+  });
+
+  currentForecastHTML = currentForecastHTML + `</div>`;
+  currentForecastElement.innerHTML = currentForecastHTML;
+}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
   console.log(response);
@@ -131,7 +166,7 @@ function displayTemperature(response) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
+  let fahrenheitTemperature = ((fahrenheiTemperature - 32) * 5) / 9;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
