@@ -58,24 +58,24 @@ function displayCurrentForecast(response) {
   let currentForecastElement = document.querySelector("#currentForecast");
 
   let currentForecastHTML = `<div class="col">`;
-  currentForecast.forEach(function (forecastCurrentDay, index) {
-    if (index < 0) {
+  currentForecast.forEach(function (currentForecastDay, index) {
+    if (index < 1) {
       currentForecastHTML =
         currentForecastHTML +
         `
-      <div class="col">
+      <div class="col-2">
       <div class="weather-forecast-description">${
-        forecastCurrentDay.weather[0].description
+        currentForecastDay.weather[0].description
       }</div>
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-morn"> ${Math.round(
-            forecastCurrentDay.temp.morn
+            currentForecastDay.temp.morn
           )}° </span>
           <span class="weather-forecast-temperature-eve"> ${Math.round(
-            forecastCurrentDay.temp.eve
+            currentForecastDay.temp.eve
           )}° </span>
                     <span class="weather-forecast-temperature-night"> ${Math.round(
-                      forecastCurrentDay.temp.night
+                      currentForecastDay.temp.night
                     )}° </span>
         </div>
       </div>
@@ -85,6 +85,12 @@ function displayCurrentForecast(response) {
 
   currentForecastHTML = currentForecastHTML + `</div>`;
   currentForecastElement.innerHTML = currentForecastHTML;
+}
+
+function getCurrentForecast(coordinates) {
+  let apiKey = "036cc1327e05f36a1530a226e833e5d5";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayCurrentForecast);
 }
 
 function displayForecast(response) {
