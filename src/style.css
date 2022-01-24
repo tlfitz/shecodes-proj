@@ -225,7 +225,8 @@ div.button-container {
 }
 
 .feels-like {
-  line-height: 24px;
+  vertical-align: text-top;
+  line-height: 40px;
   color: #6c757d;
 }
 
@@ -350,8 +351,9 @@ input.form-control {
 }
 
 .smTempUnits {
-  vertical-align: text-top;
+  vertical-align: top;
   font-size: 12px;
+  line-height: 38px;
   color: #6c757d;
   margin-top: auto;
 }
