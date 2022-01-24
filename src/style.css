@@ -436,11 +436,23 @@ input.form-control {
   margin-top: 32px;
 }
 
+section {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
 .footer {
   color: #6c757d;
   opacity: 60%;
   font-size: 12px;
-  margin-top: 4px;
+  margin-top: 0;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin-top: auto;
 }
 
 div.clearfix.weather-temperature {
